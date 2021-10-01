@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/DniTexto"
+        android:layout_width="301dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Introducir Dni"
+        app:layout_constraintBottom_toTopOf="@+id/NombreTexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/NombreTexto"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/BotonMandar"
+        app:layout_constraintEnd_toStartOf="@+id/EdadTexto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DniTexto" />
+
+    <EditText
+        android:id="@+id/EdadTexto"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Edad"
+        app:layout_constraintBottom_toTopOf="@+id/BotonMandar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DniTexto" />
+
+    <Button
+        android:id="@+id/BotonMandar"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="240dp"
+        android:text="Mandar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdadTexto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
